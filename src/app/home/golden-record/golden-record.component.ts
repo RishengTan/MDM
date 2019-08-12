@@ -177,11 +177,11 @@ export class GoldenRecordComponent implements OnInit {
 
   ngOnInit() {
     //seems like the in-memory-Db can only create one database so use the interface for now.
-    /*this.Service.getLexisNexis().subscribe(
+    this.Service.getLexisNexis().subscribe(
       res=>{
         this.SourceProviderData = res;
       }
-    );*/
+    );
 
     //for static purpose only, needs improvement when comes to practice.
     for (let NL of LexisNexis) { this.NLNPI = NL.NPI; this.NLLastName = NL.LastName; this.NLMiddleName = NL.MiddleName; this.NLFirstName = NL.FirstName; this.NLDOB = NL.DOB; this.NLBillingAddress = NL.BillingAddress; this.NLSpecialty = NL.Specialty; this.NLZipCode = NL.ZipCode; }
