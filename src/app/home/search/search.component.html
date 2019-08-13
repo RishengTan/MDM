@@ -12,43 +12,50 @@
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Middle Name</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input class="form-control" id="inputPassword3">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">First Name</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input class="form-control" id="inputPassword3">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">NPI</label>
+                <label for="inputPassword3" class="col-sm-2 col-form-label" >NPI</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input #searchBox class="form-control" id="inputPassword3" [formControl]='NPI' (keyUp)="search(searchBox.value)">
+                    <ul class="search-result">
+                        <li *ngFor="let Lexis of LexisNexisData | async" >
+                          <a routerLink="/home/GoldenRecord/{{Lexis.NPI}}">
+                            {{hero.name}}
+                          </a>
+                        </li>
+                      </ul>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">DOB</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input class="form-control" id="inputPassword3">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Specialty</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input class="form-control" id="inputPassword3">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Billing Address</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input class="form-control" id="inputPassword3">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Zip Code</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input class="form-control" id="inputPassword3">
                 </div>
             </div>
 

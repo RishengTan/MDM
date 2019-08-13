@@ -1,8 +1,9 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 import { FlatTreeControl } from '@angular/cdk/tree';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 import { Route, Router } from '@angular/router';
+import { ProviderData } from '../@core/mock/provider-data';
 interface FoodNode {
   name: string;
   children?: FoodNode[];
@@ -44,7 +45,7 @@ interface ExampleFlatNode {
 })
 export class HomeComponent {
   title = 'MDMfront';
-  @ViewChild(MatSidenav, { static: true }) sidenav: MatSidenav;
+  LexisNexisData: ProviderData;
   opened: boolean = true;
   private _transformer = (node: FoodNode, level: number) => {
     return {
@@ -61,6 +62,13 @@ export class HomeComponent {
     this._transformer, node => node.level, node => node.expandable, node => node.children);
 
   dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+  
+  ngOnInit(){
+
+  }
+  
+  @ViewChild(MatSidenav, { static: true }) sidenav: MatSidenav;
+  
 
   constructor(private route: Router) {
     this.dataSource.data = TREE_DATA;

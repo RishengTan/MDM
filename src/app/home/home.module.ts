@@ -16,17 +16,14 @@ import { MatRadioModule } from '@angular/material/radio';
 import { GoldenRecordComponent } from './golden-record/golden-record.component';
 import { SearchComponent } from './search/search.component';
 import { LogComponent } from './log/log.component';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
-import { InMemoryLexisNexisDataService } from '../@core/service/in-memory-LexisNexisdata.service';
-import { InMemoryNPPESDataService } from '../@core/service/in-memory-NPPESdata.service';
-import { InMemoryEchoDataService } from '../@core/service/in-memory-echo-data.service';
-import { InMemoryQNXTDataService } from '../@core/service/in-memory-qnxtdata.service';
+import { GoldenrecordDetailComponent } from './goldenrecord-detail/goldenrecord-detail.component';
+
 
 
 
 @NgModule({
-  declarations: [HomeComponent, GoldenRecordComponent, SearchComponent, LogComponent],
+  declarations: [HomeComponent, GoldenRecordComponent, SearchComponent, LogComponent,GoldenrecordDetailComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
@@ -43,9 +40,6 @@ import { InMemoryQNXTDataService } from '../@core/service/in-memory-qnxtdata.ser
     MatRadioModule,
     FormsModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryLexisNexisDataService, { dataEncapsulation: false }
-    )
   ]
 })
 export class HomeModule { }

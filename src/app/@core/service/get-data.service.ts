@@ -5,13 +5,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetDataService {
-  private LexisNexisUrl = 'api/LexisNexisData';
-  private NPPESUrl = 'api/NPPESData';
-  private EchoUrl = 'api/EchoData';
-  private QNXTUrl = 'api/QNXTData';
+  private LexisNexisUrl = 'http://localhost:58078/api/goldenrecord';
+  private NPPESUrl = '';
+  private EchoUrl = '';
+  private QNXTUrl = '';
   constructor( private http: HttpClient,) { 
   }
 
+  searchbyNPI(NPI){
+    return this.http.get('http://localhost:58078/api/goldenrecord?NPI=' + NPI);
+  }
   getLexisNexis(){
     return this.http.get(this.LexisNexisUrl)
   }

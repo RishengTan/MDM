@@ -6,84 +6,13 @@ import { FormControl, Validators, FormsModule } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { GetDataService } from 'src/app/@core/service/get-data.service';
 
-declare var $: any;
-
 interface FoodNode {
   name: string;
   children?: FoodNode[];
 }
 
 
-interface Provider {
-  Source: string;
-  LastName: string;
-  MiddleName: string;
-  FirstName: string;
-  NPI: string;
-  DOB: string;
-  BillingAddress: string;
-  Specialty: string;
-  ZipCode: number;
-}
-interface Lexis {
-  Source: string;
-  LastName: string;
-  MiddleName: string;
-  FirstName: string;
-  NPI: string;
-  DOB: string;
-  BillingAddress: string;
-  Specialty: string;
-  ZipCode: number;
-}
 
-const LexisNexis: Lexis[] = [
-  {
-    Source: 'LexisNexis',
-    LastName: 'Lu',
-    MiddleName: 'Null',
-    FirstName: 'Kay',
-    NPI: '779693442',
-    DOB: '07/07/1996',
-    BillingAddress: '123 Boston',
-    Specialty: 'Brain Surgeon',
-    ZipCode: 11212
-  }]
-const SourceProvider: Provider[] = [
-  {
-    Source: 'Echo',
-    LastName: 'Lu',
-    MiddleName: 'Null',
-    FirstName: 'Kay',
-    NPI: '779693442',
-    DOB: '07/07/1996',
-    BillingAddress: '123 Boston',
-    Specialty: 'Brain Surgeon, Heart Surgeon',
-    ZipCode: 11222
-  },
-  {
-    Source: 'QNXT',
-    LastName: 'T',
-    MiddleName: 'Null',
-    FirstName: 'Kay',
-    NPI: '779693442',
-    DOB: '07/07/1996',
-    BillingAddress: '123 NEW YORK',
-    Specialty: 'Brain Surgeon, Heart Surgeon',
-    ZipCode: 11112
-  },
-  {
-    Source: 'NPPES',
-    LastName: 'X',
-    MiddleName: 'Tan',
-    FirstName: 'Kay',
-    NPI: '779693442',
-    DOB: '07/07/1996',
-    BillingAddress: '321 NEW YORK',
-    Specialty: 'Lung Disease',
-    ZipCode: 12112
-  },
-]
 
 
 
@@ -156,27 +85,17 @@ export class GoldenRecordComponent implements OnInit {
   title = 'MDMfront';
 
   SourceProviderData;
-  LexisNexisData: Lexis[];
   opened: boolean = true;
-  NLNPI;
-  NLLastName;
-  NLMiddleName;
-  NLFirstName;
-  NLDOB;
-  NLBillingAddress;
-  NLSpecialty;
-  NLZipCode;
 
 
   constructor(private route: Router, private Service: GetDataService) {
-    this.dataSource.data = TREE_DATA;
-    this.LexisNexisData = LexisNexis;
-    this.SourceProviderData = SourceProvider;
+    
   }
 
 
   ngOnInit() {
     //seems like the in-memory-Db can only create one database so use the interface for now.
+    this.dataSource.data = TREE_DATA;
     this.Service.getLexisNexis().subscribe(
       res=>{
         this.SourceProviderData = res;
@@ -217,26 +136,6 @@ export class GoldenRecordComponent implements OnInit {
 
   Logout() {
     this.route.navigateByUrl('/login');
-  }
-
-  uncheck() {
-    $(':radio').mousedown(function (e) {
-      var $self = $(this);
-      if ($self.is(':checked')) {
-        var uncheck = function () {
-          setTimeout(function () { $self.removeAttr('checked'); }, 0);
-        };
-        var unbind = function () {
-          $self.unbind('mouseup', up);
-        };
-        var up = function () {
-          uncheck();
-          unbind();
-        };
-        $self.bind('mouseup', up);
-        $self.one('mouseout', unbind);
-      }
-    });
   }
 
   updateMiddleName(middlename, Source) {
