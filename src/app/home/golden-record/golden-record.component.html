@@ -1,201 +1,132 @@
 <h1>Provider information:</h1>
 <h2>Golden Record</h2>
-<table>
+<table *ngFor='let lexis of LexisNexisData'>
   <tr>
-    <th class="dropdown">
-      Data Type
-    </th>
-    <th class="dropdown">
-      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Last Name
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Middle Name
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        First Name
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        NPI
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        DOB
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Billing Address
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Specialty
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
-    <th class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Zip Code
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Echo</label>
-          </div>
-        </a>
-        <a class="dropdown-item" href="#">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">QNXT</label>
-          </div>
-        </a>
-      </div>
-    </th>
+    <th>Data Type</th>
+    <th>BusinessKey</th>
+    <th>provid</th>
+    <th>EchoDrid</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>MiddleName</th>
+    <th>ProviderFullName</th>
+    <th>Provtype</th>
+    <th>ProviderTypeDesc</th>
+    <th>Claimtype</th>
+    <th>Obs_claimtype</th>
+    <th>LicenseNumber</th>
+    <th>DOB</th>
+    <th>SSN</th>
+    <th>NPI</th>
+    <th>EmploymentCode</th>
+    <th>Specialtycode</th>
+    <th>SpecialtyDescription</th>
+    <th>Profdesig</th>
+    <th>PracAddressType</th>
+    <th>PracAddressTypeDesc</th>
+    <th>Addr</th>
+    <th>Addr2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>EffDate</th>
+    <th>TermDate</th>
+    <th>BillAddressType</th>
+    <th>BillAddressTypeDesc</th>
+    <th>BillAddr</th>
+    <th>Billaddr2</th>
+    <th>BillCity</th>
+    <th>Billstate</th>
+    <th>Billzip</th>
+    <th>Billphone</th>
+    <th>Billfax</th>
+    <th>BillEffdate</th>
+    <th>BillTermdate</th>
+    <th>TaxID</th>
+    <th>QNXTID</th>
+    <th>Source</th>
+    <th>echoid</th>
+    <th>status</th>
+    <th>EchoIPAStatusCode</th>
+    <th>EchoIPAStatusDescr</th>
+    <th>EchoHospStatusCode</th>
+    <th>EchoHOSPStatusDescr</th>
+    <th>Echo_ACO_Active</th>
+    <th>EchoIPAStatus</th>
+    <th>EchoHOSPStatus</th>
+    <th>Level1</th>
+    <th>Level2</th>
+    <th>Level3</th>
+    <th>Email</th>
+    <th>TaxonomyCode</th>
+    <th>spectype</th>
+    <th>OrgName</th>
+
   </tr>
   <tr>
-    <td>Golden Record</td>
-    <td><input class='borderless'[formControl]="LastName">
-      
-
-        <div *ngIf="LastName.invalid && LastName.errors.required" class="alert alert-danger">
-          Name is required.
-        </div>
-        <div *ngIf="LastName.invalid && LastName.errors.pattern" class="alert alert-danger">
-          Name must be a string.
-        </div>
-      
-    </td>
-    <td><input class='borderless' [formControl]="MiddleName"></td>
-    <td><input class='borderless' [formControl]="FirstName"></td>
-    <td><input class='borderless' [formControl]="NPI"></td>
-    <td><input class='borderless' [formControl]="DOB"></td>
-    <td><input class='borderless' [formControl]="BillingAddress"></td>
-    <td><input class='borderless' [formControl]="Specialty"></td>
-    <td><input class='borderless' [formControl]="ZipCode">
-      <div *ngIf="ZipCode.invalid && (ZipCode.dirty || ZipCode.touched)" class="alert alert-danger">
-
-        <div *ngIf="ZipCode.errors.required">
-          Name is required.
-        </div>
-        <div *ngIf="ZipCode.errors.pattern">
-          Name must be a number.
-        </div>
-      </div>
-    </td>
+    <th>Golden Record</th>
+    <th><input class="borderless" [formControl]="BusinessKey" [value]="lexis.BusinessKey"></th>
+    <th><input class="borderless"[value]="lexis.provid" [formControl]="provid"></th>
+    <th><input class="borderless"[value]="lexis.EchoDrid" [formControl]="EchoDrid"></th>
+    <th><input class="borderless"[value]="lexis.FirstName" [formControl]="FirstName"></th>
+    <th><input class="borderless"[value]="lexis.LastName" [formControl]="LastName"></th>
+    <th><input class="borderless"[value]="lexis.MiddleName" [formControl]="MiddleName"></th>
+    <th><input class="borderless"[value]="lexis.ProviderFullName" [formControl]="ProviderFullName"></th>
+    <th><input class="borderless"[value]="lexis.Provtype" [formControl]="Provtype"></th>
+    <th><input class="borderless"[value]="lexis.ProviderTypeDesc" [formControl]="ProviderTypeDesc"></th>
+    <th><input class="borderless"[value]="lexis.Claimtype" [formControl]="Claimtype"></th>
+    <th><input class="borderless"[value]="lexis.Obs_claimtype" [formControl]="Obs_claimtype"></th>
+    <th><input class="borderless"[value]="lexis.LicenseNumber" [formControl]="LicenseNumber"></th>
+    <th><input class="borderless"[value]="lexis.DOB" [formControl]="DOB"></th>
+    <th><input class="borderless"[value]="lexis.SSN" [formControl]="SSN"></th>
+    <th><input class="borderless"[value]="lexis.NPI" [formControl]="NPI"></th>
+    <th><input class="borderless"[value]="lexis.EmploymentCode" [formControl]="EmploymentCode"></th>
+    <th><input class="borderless"[value]="lexis.Specialtycode" [formControl]="Specialtycode"></th>
+    <th><input class="borderless"[value]="lexis.SpecialtyDescription" [formControl]="SpecialtyDescription"></th>
+    <th><input class="borderless"[value]="lexis.Profdesig" [formControl]="Profdesig"></th>
+    <th><input class="borderless"[value]="lexis.PracAddressType" [formControl]="PracAddressType"></th>
+    <th><input class="borderless"[value]="lexis.PracAddressTypeDesc" [formControl]="PracAddressTypeDesc"></th>
+    <th><input class="borderless"[value]="lexis.Addr" [formControl]="Addr"></th>
+    <th><input class="borderless"[value]="lexis.Addr2" [formControl]="Addr2"></th>
+    <th><input class="borderless"[value]="lexis.City" [formControl]="City"></th>
+    <th><input class="borderless"[value]="lexis.State" [formControl]="State"></th>
+    <th><input class="borderless"[value]="lexis.Zip" [formControl]="Zip"></th>
+    <th><input class="borderless"[value]="lexis.Phone" [formControl]="Phone"></th>
+    <th><input class="borderless"[value]="lexis.Fax" [formControl]="Fax"></th>
+    <th><input class="borderless"[value]="lexis.EffDate" [formControl]="EffDate"></th>
+    <th><input class="borderless"[value]="lexis.TermDate" [formControl]="TermDate"></th>
+    <th><input class="borderless"[value]="lexis.BillAddressType" [formControl]="BillAddressType"></th>
+    <th><input class="borderless"[value]="lexis.BillAddressTypeDesc" [formControl]="BillAddressTypeDesc"></th>
+    <th><input class="borderless"[value]="lexis.BillAddr" [formControl]="BillAddr"></th>
+    <th><input class="borderless"[value]="lexis.Billaddr2" [formControl]="Billaddr2"></th>
+    <th><input class="borderless"[value]="lexis.BillCity" [formControl]="BillCity"></th>
+    <th><input class="borderless"[value]="lexis.Billstate" [formControl]="Billstate"></th>
+    <th><input class="borderless"[value]="lexis.Billzip" [formControl]="Billzip"></th>
+    <th><input class="borderless"[value]="lexis.Billphone" [formControl]="Billphone"></th>
+    <th><input class="borderless"[value]="lexis.Billfax" [formControl]="Billfax"></th>
+    <th><input class="borderless"[value]="lexis.BillEffdate" [formControl]="BillEffdate"></th>
+    <th><input class="borderless"[value]="lexis.BillTermdate" [formControl]="BillTermdate"></th>
+    <th><input class="borderless"[value]="lexis.TaxID" [formControl]="TaxID"></th>
+    <th><input class="borderless"[value]="lexis.QNXTID" [formControl]="QNXTID"></th>
+    <th><input class="borderless"[value]="lexis.Source" [formControl]="Source"></th>
+    <th><input class="borderless"[value]="lexis.echoid" [formControl]="echoid"></th>
+    <th><input class="borderless"[value]="lexis.status" [formControl]="status"></th>
+    <th><input class="borderless"[value]="lexis.EchoIPAStatusCode" [formControl]="EchoIPAStatusCode"></th>
+    <th><input class="borderless"[value]="lexis.EchoIPAStatusDescr" [formControl]="EchoIPAStatusDescr"></th>
+    <th><input class="borderless"[value]="lexis.EchoHospStatusCode" [formControl]="EchoHospStatusCode"></th>
+    <th><input class="borderless"[value]="lexis.EchoHOSPStatusDescr" [formControl]="EchoHOSPStatusDescr"></th>
+    <th><input class="borderless"[value]="lexis.Echo_ACO_Active" [formControl]="Echo_ACO_Active"></th>
+    <th><input class="borderless"[value]="lexis.EchoIPAStatus" [formControl]="EchoIPAStatus"></th>
+    <th><input class="borderless"[value]="lexis.EchoHOSPStatus" [formControl]="EchoHOSPStatus"></th>
+    <th><input class="borderless"[value]="lexis.Level1" [formControl]="Level1"></th>
+    <th><input class="borderless"[value]="lexis.Level2" [formControl]="Level2"></th>
+    <th><input class="borderless"[value]="lexis.Level3" [formControl]="Level3"></th>
+    <th><input class="borderless"[value]="lexis.Email" [formControl]="Email"></th>
+    <th><input class="borderless"[value]="lexis.TaxonomyCode" [formControl]="TaxonomyCode"></th>
+    <th><input class="borderless"[value]="lexis.spectype" [formControl]="spectype"></th>
+    <th><input class="borderless"[value]="lexis.OrgName" [formControl]="OrgName"></th>
   </tr>
   <tr>
     <td>Reference Source</td>
@@ -210,19 +141,71 @@
   </tr>
 </table>
 <button class="save"
-  [disabled]="FirstName.invalid || LastName.invalid ||  NPI.invalid || DOB.invalid || BillingAddress.invalid || Specialty.invalid || ZipCode.invalid ">Save</button>
+  [disabled]="FirstName.invalid || LastName.invalid ||  NPI.invalid ">Save</button>
 <h2>Source Data</h2>
 <table>
   <tr>
     <th>Source</th>
-    <th>Last Name</th>
-    <th>Middle Name</th>
-    <th>First Name</th>
-    <th>NPI</th>
+    <th>BusinessKey</th>
+    <th>provid</th>
+    <th>EchoDrid</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>MiddleName</th>
+    <th>ProviderFullName</th>
+    <th>Provtype</th>
+    <th>ProviderTypeDesc</th>
+    <th>Claimtype</th>
+    <th>Obs_claimtype</th>
+    <th>LicenseNumber</th>
     <th>DOB</th>
-    <th>Billing Address</th>
-    <th>Specialty</th>
-    <th>Zip Code</th>
+    <th>SSN</th>
+    <th>NPI</th>
+    <th>EmploymentCode</th>
+    <th>Specialtycode</th>
+    <th>SpecialtyDescription</th>
+    <th>Profdesig</th>
+    <th>PracAddressType</th>
+    <th>PracAddressTypeDesc</th>
+    <th>Addr</th>
+    <th>Addr2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>EffDate</th>
+    <th>TermDate</th>
+    <th>BillAddressType</th>
+    <th>BillAddressTypeDesc</th>
+    <th>BillAddr</th>
+    <th>Billaddr2</th>
+    <th>BillCity</th>
+    <th>Billstate</th>
+    <th>Billzip</th>
+    <th>Billphone</th>
+    <th>Billfax</th>
+    <th>BillEffdate</th>
+    <th>BillTermdate</th>
+    <th>TaxID</th>
+    <th>QNXTID</th>
+    <th>Source</th>
+    <th>echoid</th>
+    <th>status</th>
+    <th>EchoIPAStatusCode</th>
+    <th>EchoIPAStatusDescr</th>
+    <th>EchoHospStatusCode</th>
+    <th>EchoHOSPStatusDescr</th>
+    <th>Echo_ACO_Active</th>
+    <th>EchoIPAStatus</th>
+    <th>EchoHOSPStatus</th>
+    <th>Level1</th>
+    <th>Level2</th>
+    <th>Level3</th>
+    <th>Email</th>
+    <th>TaxonomyCode</th>
+    <th>spectype</th>
+    <th>OrgName</th>
   </tr>
   <tr>
     <td>
@@ -235,72 +218,579 @@
 
     </td>
     <td>
-      <mat-radio-group [(ngModel)]="NLLastName" >
-        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.LastName'
-        (click)=updateLastName(NL.LastName,NL.Source)>{{NL.LastName}}</mat-radio-button>
-        <mat-radio-button *ngFor='let Provider of SourceProviderData' 
-        (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.BusinessKey' checked
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.BusinessKey}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
       </mat-radio-group>
     </td>
     <td>
       <mat-radio-group [(ngModel)]="NLMiddleName">
-        
-        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.MiddleName'
-        (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.MiddleName}}</mat-radio-button>
-          <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
-            {{Provider.MiddleName}}</mat-radio-button>
-          </mat-radio-group>
 
-        
-      
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.provid' 
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.provid}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
     </td>
     <td>
       <mat-radio-group [(ngModel)]="NLFirstName">
-          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.FirstName'
-          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.FirstName}}</mat-radio-button>
-        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateFirstName(Provider.FirstName,Provider.Source) >
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EchoDrid'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.EchoDrid}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
           {{Provider.FirstName}}</mat-radio-button>
-        </mat-radio-group>
+      </mat-radio-group>
     </td>
     <td>
       <mat-radio-group [(ngModel)]="NLNPI">
-          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.NPI'
-          (click)=updateNPI(NL.NPI,NL.Source)>{{NL.NPI}}</mat-radio-button>
-        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>{{Provider.NPI}}
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.FirstName' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.FirstName}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
         </mat-radio-button>
       </mat-radio-group>
     </td>
     <td>
       <mat-radio-group [(ngModel)]="NLDOB">
-          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.DOB'
-          (click)=updateDOB(NL.DOB,NL.Source)>{{NL.DOB}}</mat-radio-button>
-        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>{{Provider.DOB}}
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.LastName' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.LastName}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
         </mat-radio-button>
       </mat-radio-group>
     </td>
     <td>
       <mat-radio-group [(ngModel)]="NLBillingAddress">
-          <mat-radio-button *ngFor='let NL of LexisNexisData'  [value]='NL.BillingAddress'
-          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.BillingAddress}}</mat-radio-button>
-        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.MiddleName'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.MiddleName}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
           {{Provider.BillingAddress}}</mat-radio-button>
-        </mat-radio-group>
+      </mat-radio-group>
     </td>
     <td>
       <div class="special">
         <mat-radio-group [(ngModel)]="NLSpecialty">
-            <mat-radio-button *ngFor='let NL of LexisNexisData'  [value]='NL.Specialty'
-            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.Specialty}}</mat-radio-button>
-          <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.ProviderFullName'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.ProviderFullName}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
             {{Provider.Specialty}}</mat-radio-button>
-          </mat-radio-group>
+        </mat-radio-group>
       </div>
     </td>
     <td>
       <mat-radio-group [(ngModel)]="NLZipCode">
-          <mat-radio-button *ngFor='let NL of LexisNexisData'  [value]='NL.ZipCode'
-          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.ZipCode}}</mat-radio-button>
-        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Provtype'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.Provtype}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.ProviderTypeDesc'
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.ProviderTypeDesc}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLMiddleName">
+
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Claimtype'
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.Claimtype}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLFirstName">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Obs_claimtype'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.Obs_claimtype}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
+          {{Provider.FirstName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLNPI">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.LicenseNumber' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.LicenseNumber}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.DOB' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.DOB}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.SSN'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.SSN}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.NPI'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.NPI}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EmploymentCode'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.EmploymentCode}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.Specialtycode'
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.Specialtycode}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLMiddleName">
+
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.SpecialtyDescription'
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.SpecialtyDescription}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLFirstName">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Profdesig'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.Profdesig}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
+          {{Provider.FirstName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLNPI">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.PracAddressType' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.PracAddressType}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.PracAddressTypeDesc' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.PracAddressTypeDesc}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Addr'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.Addr}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Addr2'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.Addr2}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.City'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.City}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.State'
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.State}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLMiddleName">
+
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Zip'
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.Zip}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLFirstName">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Phone'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.Phone}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
+          {{Provider.FirstName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLNPI">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Fax' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.Fax}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EffDate' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.EffDate}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.TermDate'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.TermDate}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.BillAddressType'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.BillAddressType}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.BillAddressTypeDesc'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.BillAddressTypeDesc}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.BillAddr'
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.BillAddr}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLMiddleName">
+
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Billaddr2'
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.Billaddr2}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLFirstName">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.BillCity'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.BillCity}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
+          {{Provider.FirstName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLNPI">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Billstate' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.Billstate}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Billzip' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.Billzip}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Billphone'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.Billphone}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Billfax'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.Billfax}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.BillEffdate'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.BillEffdate}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.BillTermdate'
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.BillTermdate}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLMiddleName">
+
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.TaxID'
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.TaxID}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLFirstName">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.QNXTID'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.QNXTID}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
+          {{Provider.FirstName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLNPI">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Source' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.Source}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.echoid' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.echoid}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.status'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.status}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EchoIPAStatusCode'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.EchoIPAStatusCode}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EchoIPAStatusDescr'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.EchoIPAStatusDescr}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLLastName">
+        <mat-radio-button *ngFor='let lexis of LexisNexisData' [value]='lexis.EchoHospStatusCode'
+          (click)=updateBusinessKey(lexis.BusinessKey,lexis.Source)>{{lexis.EchoHospStatusCode}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateLastName(Provider.LastName,Provider.Source)>{{Provider.LastName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLMiddleName">
+
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EchoHOSPStatusDescr'
+          (click)=updateMiddleName(NL.MiddleName,NL.Source)>{{NL.EchoHOSPStatusDescr}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateMiddleName(Provider.MiddleName,Provider.Source)>
+          {{Provider.MiddleName}}</mat-radio-button>
+      </mat-radio-group>
+
+
+
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLFirstName">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Echo_ACO_Active'
+          (click)=updateFirstName(NL.FirstName,NL.Source)>{{NL.Echo_ACO_Active}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateFirstName(Provider.FirstName,Provider.Source)>
+          {{Provider.FirstName}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLNPI">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EchoIPAStatus' (click)=updateNPI(NL.NPI,NL.Source)>
+          {{NL.EchoIPAStatus}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateNPI(Provider.NPI,Provider.Source)>
+          {{Provider.NPI}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.EchoHOSPStatus' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.EchoHOSPStatus}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Level1'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.Level1}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Level2'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.Level2}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Level3'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.Level3}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLDOB">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.Email' (click)=updateDOB(NL.DOB,NL.Source)>
+          {{NL.Email}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData' (click)=updateDOB(Provider.DOB,Provider.Source)>
+          {{Provider.DOB}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLBillingAddress">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.TaxonomyCode'
+          (click)=updateBillingAddress(NL.BillingAddress,NL.Source)>{{NL.TaxonomyCode}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateBillingAddress(Provider.BillingAddress,Provider.Source)>
+          {{Provider.BillingAddress}}</mat-radio-button>
+      </mat-radio-group>
+    </td>
+    <td>
+      <div class="special">
+        <mat-radio-group [(ngModel)]="NLSpecialty">
+          <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.spectype'
+            (click)=updateSpecialty(NL.Specialty,NL.Source)>{{NL.spectype}}</mat-radio-button>
+          <mat-radio-button *ngFor='let Provider of SourceProviderData'
+            (click)=updateSpecialty(Provider.Specialty,Provider.Source)>
+            {{Provider.Specialty}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </td>
+    <td>
+      <mat-radio-group [(ngModel)]="NLZipCode">
+        <mat-radio-button *ngFor='let NL of LexisNexisData' [value]='NL.OrgName'
+          (click)=updateZipCode(NL.ZipCode,NL.Source)>{{NL.OrgName}}</mat-radio-button>
+        <mat-radio-button *ngFor='let Provider of SourceProviderData'
+          (click)=updateZipCode(Provider.ZipCode,Provider.Source)>{{Provider.ZipCode}}
         </mat-radio-button>
       </mat-radio-group>
     </td>
