@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { FormControl, Validators, FormsModule } from '@angular/forms';
 import { GetDataService } from 'src/app/@core/service/get-data.service';
-import { Subject } from 'rxjs';
-import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import { Subject, Observable } from 'rxjs';
+import { debounceTime, distinctUntilChanged, switchMap, startWith, map } from 'rxjs/operators';
+import { ProviderData } from 'src/app/@core/mock/provider-data';
 
 
 @Component({
@@ -13,8 +14,11 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 })
 export class SearchComponent implements OnInit {
   NPI = new FormControl('');
-  LexisNexisData;
+  LastName = new FormControl('');
+  LexisNexisData: ProviderData[] = [];
+  LexisNexisDataLastName$: Observable<ProviderData[]>;
   private searchTerms = new Subject<string>();
+
 
   constructor(
     private route: Router,
@@ -24,19 +28,26 @@ export class SearchComponent implements OnInit {
   search(term: string): void {
     this.searchTerms.next(term);
   }
+
   ngOnInit() {
-    this.LexisNexisData = this.searchTerms.pipe(
-      // wait 300ms after each keystroke before considering the term
-      debounceTime(300),
-
-      // ignore new term if same as previous term
+    this.service.getLexisNexis().subscribe(
+      res => this.LexisNexisData = res
+    );
+    /*this.LexisNexisDataLastName$ = this.searchTerms.pipe(
+      debounceTime(0),
       distinctUntilChanged(),
+      switchMap((term: string) => this.service.getLexisNexisByLastName(term),
+      ),
+    );*/
 
-      // switch to new search observable each time the term changes
-      switchMap((term: string) => this.service.searchbyNPI(term)),
+    this.LexisNexisDataLastName$ = this.LastName.valueChanges.pipe(
+      distinctUntilChanged(),
+      switchMap(res=>this.service.getLexisNexisByLastName(res)),
     );
   }
+
   Search() {
     this.route.navigateByUrl('/home/GoldenRecord/' + this.NPI.value);
   }
+
 }

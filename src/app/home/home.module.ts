@@ -18,7 +18,7 @@ import { SearchComponent } from './search/search.component';
 import { LogComponent } from './log/log.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GoldenrecordDetailComponent } from './goldenrecord-detail/goldenrecord-detail.component';
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 
@@ -40,6 +40,7 @@ import { GoldenrecordDetailComponent } from './goldenrecord-detail/goldenrecord-
     MatRadioModule,
     FormsModule,
     HttpClientModule,
+    MatAutocompleteModule
   ]
 })
 export class HomeModule { }

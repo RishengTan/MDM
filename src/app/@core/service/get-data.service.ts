@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { ProviderData } from '../mock/provider-data';
 
 @Injectable({
   providedIn: 'root'
@@ -9,22 +11,32 @@ export class GetDataService {
   private NPPESUrl = '';
   private EchoUrl = '';
   private QNXTUrl = '';
-  constructor( private http: HttpClient,) { 
+  constructor(private http: HttpClient, ) {
   }
 
-  searchbyNPI(NPI){
-    return this.http.get('http://localhost:58078/api/goldenrecord?NPI=' + NPI);
+  searchbyNPI(NPI): Observable<ProviderData[]> {
+    return this.http.get<ProviderData[]>('http://localhost:58078/api/goldenrecord?NPI=' + NPI);
   }
-  getLexisNexis(){
-    return this.http.get(this.LexisNexisUrl)
+  getLexisNexis(): Observable<ProviderData[]> {
+    return this.http.get<ProviderData[]>(this.LexisNexisUrl)
   }
-  getQNXT(){
+
+  getLexisNexisByLastName(LastName): Observable<ProviderData[]> {
+    return this.http.get<ProviderData[]>(this.LexisNexisUrl + '?LastName=' + LastName)
+  }
+
+
+
+
+
+
+  getQNXT() {
     return this.http.get(this.QNXTUrl)
   }
-  getNPPES(){
+  getNPPES() {
     return this.http.get(this.NPPESUrl)
   }
-  getEcho(){
+  getEcho() {
     return this.http.get(this.EchoUrl)
   }
 }
