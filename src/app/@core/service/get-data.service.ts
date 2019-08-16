@@ -24,6 +24,9 @@ export class GetDataService {
   getLexisNexisByLastName(LastName): Observable<ProviderData[]> {
     return this.http.get<ProviderData[]>(this.LexisNexisUrl + '?LastName=' + LastName)
   }
+  getLexisNexisByFirstName(FirstName): Observable<ProviderData[]> {
+    return this.http.get<ProviderData[]>(this.LexisNexisUrl + '?FirstName=' + FirstName)
+  }
 
 
 

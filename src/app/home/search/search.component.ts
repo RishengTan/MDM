@@ -15,8 +15,10 @@ import { ProviderData } from 'src/app/@core/mock/provider-data';
 export class SearchComponent implements OnInit {
   NPI = new FormControl('');
   LastName = new FormControl('');
+  FirstName = new FormControl('');
   LexisNexisData: ProviderData[] = [];
   LexisNexisDataLastName$: Observable<ProviderData[]>;
+  LexisNexisDataFirstName$: Observable<ProviderData[]>;
 
 
   constructor(
@@ -33,6 +35,10 @@ export class SearchComponent implements OnInit {
       distinctUntilChanged(),
       concatMap(res => this.service.getLexisNexisByLastName(res)),
     );
+    this.LexisNexisDataFirstName$ = this.FirstName.valueChanges.pipe(
+      distinctUntilChanged(),
+      switchMap(res => this.service.getLexisNexisByFirstName(res)),
+    );
   }
 
   Search() {
@@ -40,6 +46,8 @@ export class SearchComponent implements OnInit {
       this.route.navigateByUrl('/home/GoldenRecord/NPI/' + this.NPI.value);
     } else if (this.NPI.value === '' && this.LastName.value !== '') {
       this.route.navigateByUrl('/home/GoldenRecord/LastName/' + this.LastName.value);
+    } else if (this.NPI.value === '' && this.FirstName.value !== '') {
+      this.route.navigateByUrl('/home/GoldenRecord/FirstName/' + this.FirstName.value);
     }
   }
 }

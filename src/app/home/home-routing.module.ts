@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { LogComponent } from './log/log.component';
 import { GoldenrecordDetailComponent } from './goldenrecord-detail/goldenrecord-detail.component';
 import { GoldenrecordBylastnameComponent } from './goldenrecord-bylastname/goldenrecord-bylastname.component';
+import { GoldenrecordByfirstnameComponent } from './goldenrecord-byfirstname/goldenrecord-byfirstname.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: '', component: SearchComponent },
       { path: 'GoldenRecord/NPI/:NPI', component: GoldenrecordDetailComponent },
       { path: 'GoldenRecord/LastName/:LastName', component: GoldenrecordBylastnameComponent },
+      { path: 'GoldenRecord/FirstName/:FirstName', component: GoldenrecordByfirstnameComponent },
       { path: 'GoldenRecord/:NPI/edit', component: GoldenRecordComponent },
     ]
   },
