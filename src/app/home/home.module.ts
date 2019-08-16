@@ -19,11 +19,12 @@ import { LogComponent } from './log/log.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GoldenrecordDetailComponent } from './goldenrecord-detail/goldenrecord-detail.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { GoldenrecordBylastnameComponent } from './goldenrecord-bylastname/goldenrecord-bylastname.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, GoldenRecordComponent, SearchComponent, LogComponent,GoldenrecordDetailComponent],
+  declarations: [HomeComponent, GoldenRecordComponent, SearchComponent, LogComponent,GoldenrecordDetailComponent, GoldenrecordBylastnameComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
