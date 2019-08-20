@@ -23,9 +23,9 @@ export class GoldenrecordByfirstnameComponent implements OnInit {
     this.getLexisNexisDatabyFirstName();
   }
 
-  edit(){
+  edit(NPI){
     const FirstName = this.route.snapshot.paramMap.get('FirstName');
-    this.router.navigateByUrl('/home/GoldenRecord/' + FirstName + '/edit');
+    this.router.navigateByUrl(`/home/GoldenRecord/${NPI}/edit`);
   }
   getLexisNexisDatabyFirstName(): void {
     const FirstName = this.route.snapshot.paramMap.get('FirstName');

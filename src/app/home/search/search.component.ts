@@ -33,7 +33,7 @@ export class SearchComponent implements OnInit {
 
     this.LexisNexisDataLastName$ = this.LastName.valueChanges.pipe(
       distinctUntilChanged(),
-      concatMap(res => this.service.getLexisNexisByLastName(res)),
+      switchMap(res => this.service.getLexisNexisByLastName(res)),
     );
     this.LexisNexisDataFirstName$ = this.FirstName.valueChanges.pipe(
       distinctUntilChanged(),
@@ -43,7 +43,7 @@ export class SearchComponent implements OnInit {
 
   Search() {
     if (this.NPI.value !== '') {
-      this.route.navigateByUrl('/home/GoldenRecord/NPI/' + this.NPI.value);
+      this.route.navigateByUrl(`/home/GoldenRecord/NPI/${this.NPI.value}`);
     } else if (this.NPI.value === '' && this.LastName.value !== '') {
       this.route.navigateByUrl('/home/GoldenRecord/LastName/' + this.LastName.value);
     } else if (this.NPI.value === '' && this.FirstName.value !== '') {

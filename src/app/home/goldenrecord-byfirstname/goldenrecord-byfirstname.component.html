@@ -1,7 +1,8 @@
 <div *ngIf='LexisNexisData'>
     <h1>Provider information:</h1>
     <h2>Golden Record</h2>
-    <table  *ngFor='let lexis of LexisNexisData'>
+    <div *ngFor='let lexis of LexisNexisData'>
+    <table>
         <tr>
             <th>BusinessKey</th>
             <th>provid</th>
@@ -141,8 +142,10 @@
             <td></td>
         </tr>
     </table>
+    <button [ngClass]="{'hide':LexisNexisData==null||LexisNexisData.length==0 }" (click)="edit(lexis.NPI)" >Edit</button>
+</div>
 </div>
 
-<button [ngClass]="{'hide':LexisNexisData==null||LexisNexisData.length==0 }" (click)="edit()" >Edit</button>
+
 <div [ngClass]="{'hide':!(LexisNexisData!=null&&LexisNexisData.length==0)}">No Search Result</div>
 <div [ngClass]="{'hide':LexisNexisData!=null}">Loading</div>
